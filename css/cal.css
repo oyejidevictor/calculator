@@ -1,0 +1,535 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.calBody{
+    box-sizing: border-box;
+    background-color: rgb(143, 139, 139);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.cal{
+    box-sizing: border-box;
+    background-color: rgb(228, 225, 225);
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.name{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.name2{
+    display: block;
+    color: rgb(29, 240, 29);
+    margin-bottom: 0;
+}
+
+.solar{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    padding: 23px 56px;
+}
+
+.twoWay{
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+}
+
+.screen{
+    padding: 0;
+    margin: 0;
+    background-color:  rgb(199, 241, 199);
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 3px 3px 15px rgb(158, 174, 158) inset;
+}
+
+.screen1{
+    background-color:  rgb(199, 241, 199);
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 25px 19px;
+    text-align: right;
+    box-shadow: 3px 3px 15px rgb(158, 174, 158) inset;
+}
+
+/* .screen2{
+    background-color:  rgb(199, 241, 199);
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    padding: 27px 37px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgb(158, 174, 158) inset;
+} */
+
+.scr{
+    margin-top: -80.5px;
+    /* margin-bottom: 40px; */
+}
+
+/* Button */
+.buttons{
+    position: relative;
+}
+
+.calBtnRad{
+    margin-right: 5px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 17px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 0px 4px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    transform: rotate(20deg);
+}
+.calBtnDeg{
+    margin-right: 73px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 15px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 0px 4px 2px 4px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    transform: rotate(20deg);
+}
+
+.calBtnRY1{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    position: absolute;
+    top: 5px;
+    left: 114px;
+}
+
+.calBtnRY2{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    position: absolute;
+    top: 37px;
+    left: 114px;
+}
+
+.calBtnRY3{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    position: absolute;
+    top: 21px;
+    left: 93px;
+}
+
+.calBtnRY4{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    position: absolute;
+    top: 21px;
+    left: 137px;
+}
+
+.calBtnOFF{
+    margin-left: 0px;
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    transform: rotate(-20deg);
+}
+
+.calBtnON{
+    font-weight: 700;
+    background-color:  rgb(78, 152, 221);
+    color: white;
+    font-size: 9px;
+    border-radius: 15px 10px 15px 15px;
+    padding: 5px 11px;
+    box-shadow: 1px 1px 2px 2px rgb(78, 152, 221) inset;
+    transform: rotate(-20deg);
+}
+
+
+.calBtnLog{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 12px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px 3px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnX2{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 12px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px 4px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnS{
+    margin-right: 84px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 12px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnEx{
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3.5px 9px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnL10x{
+    margin-left: 2px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 12px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 6px 6px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnPI{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 11px 6px 11px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnE{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 17px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 2px 12px 3px 12px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnPer{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 10px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnX2{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 9px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnSq{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 11px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnLog10{
+    margin-left: 1px;
+    margin-right: 84px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 10px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 7px 0px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnExclam{
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 14px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnCar{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 11px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtn9{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 14px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnSin{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 6px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnCos{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 5px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnTan{
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 5px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+
+.calBtnAsin{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 2px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAcos{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 2px 4px 2px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAtan{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 2px 4px 2px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAsinh{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 11px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px 3px 5px 3px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAcosh{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 10px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px 3px 5px 3px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAtanh{
+    font-weight: 700;
+    background-color:  black;
+    color: white;
+    font-size: 10px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 5px 3px 5px 3px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+
+.calBtn{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 20px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtn1{
+    font-weight: 700;
+    background-color:  rgb(255, 81, 0);
+    font-size: 20px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 0px 3px 0px 3px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtn2{
+    font-weight: 700;
+    background-color:  rgb(255, 81, 0);
+    font-size: 20px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 0px 7px 0px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnStar{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 17px 3px 17px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnP{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 15px 3px 15px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnDot1{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 18px 3px 18px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+
+.calBtnRnd{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 8px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnAns{
+    margin-right: 3px;
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 7px 3px 7px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}
+
+.calBtnEq{
+    font-weight: 700;
+    background-color:  white;
+    font-size: 15px;
+    border-radius: 7px 7px 15px 15px;
+    padding: 3px 14px 3px 14px;
+    box-shadow: 1px 1px 2px 2px rgb(25, 26, 25) inset;
+}

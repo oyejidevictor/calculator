@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <title>Scientific Calculator</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/cal.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-dark" onload="switchOFF()">
+
+    <div class="d-flex flex-wrap justify-content-center mt-5">
+        <div class="calBody">
+            <div class="cal">
+                <div class="d-flex flex-fill">
+                    <!-- Calculator Type -->
+                    <div class="text-center">
+                        <p class="name"><strong>VSPHERE</strong></p>
+                        <i>fx-991ES VS</i>
+                        <i class="name2">ANATURAL-VS</i>
+                    </div>
+                    <div class="mt-2 ml-3">
+                        <p class="solar"></p>
+                        <p class="twoWay text-right mr-1">TWO WAY POWER</p>
+                    </div>
+                </div>
+
+                <!-- Screen -->
+                <div>
+                    <p class="screen" id="default"></p>
+                </div>
+                <div class="scr" id="OFF">
+                    <form name="form">
+                        <input type="text" name="textinput" class="screen1" value="" id="result" disabled>
+                        <!-- <textarea name="message" class="screen2" rows="1" id="result" onclick="DEL()"></textarea> -->
+                    </form>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <table class="ml-2 mt-2">
+                    <tr>
+                        <th>
+                            <button class="calBtnRad text-center" id="selBtn"><i>rad</i></button>
+                        </th>
+                        <th>
+                            <button class="calBtnDeg text-center"><i>deg</i></button>
+                        </th>
+                        <th>
+                            <button class="calBtnRY1 text-center" id=""><i class="fa fa-angle-up"></i></button>
+                            <button class="calBtnRY2 text-center" id="ltBtn"><i class="fa fa-angle-down"></i></button>
+                        </th>
+
+                        <th>
+                            <button class="calBtnOFF text-center" onclick="switchOFF()">OFF</button>
+                        </th>
+                        <th>
+                            <button class="calBtnON text-center" onclick="switchON()">ON</button>
+                        </th>
+                    </tr>
+                </table>
+
+                <table class="ml-2 mt-2">
+                    <tr>
+                        <th>
+                            <button class="calBtnLog text-center" onclick="Log()">Log(</button>
+                        </th>
+                        <th>
+                            <button class="calBtnLog10 text-center" onclick="Log10()">Log<sub>10</sub>(</button>
+                        </th>
+                        <th>
+                            <button class="calBtnRY3 text-center"><i class="fa fa-angle-left"></i></button>
+                            <button class="calBtnRY4 text-center"><i class="fa fa-angle-right"></i></button>
+                        </th>
+                        <th>
+                            <button class="calBtnEx text-center" onclick="Exp()">e<sup>x</sup></button>
+                        </th>
+                        <th>
+                            <button class="calBtnL10x text-center" onclick="TenPow()">10<sup>x</sup></button>
+                        </th>
+                    </tr>
+                </table>
+
+                <table class="ml-2">
+                    <tr>
+                        <th>
+                            <button class="calBtnPI text-center" value="&pi;" onclick="PI(value)">&pi;</button>
+                        </th>
+                        <th>
+                            <button class="calBtnE text-center" value="e" onclick="E(value)">e</button>
+                        </th>
+                        <th>
+                            <button class="calBtnPer text-center" onclick="Per()">%</button>
+                        </th>
+                        <th>
+                            <button class="calBtnSin text-center" value="sin" onclick="Sin()">sin</button>
+                        </th>
+                        <th>
+                            <button class="calBtnCos text-center" value="cos" onclick="Cos()">cos</button>
+                        </th>
+                        <th>
+                            <button class="calBtnTan text-center" value="tan" onclick="Tan()">tan</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="calBtnSq text-center" value="&Sqrt;" onclick="Sqrt(value)">&Sqrt;</button>
+                        </th>
+                        <th>
+                            <button class="calBtnX2 text-center" onclick="Xsq()">X<sup>2</sup></button>
+                        </th>
+                        <th>
+                            <button class="calBtnExclam text-center" onclick="factorial()">!</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAsin text-center" value="asin" onclick="Asin()">asin</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAcos text-center" value="acos" onclick="Acos()">acos</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAtan text-center" value="atan" onclick="Atan()">atan</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="calBtnCar text-center" value="^" onclick="Car()">^</button>
+                        </th>
+                        <th>
+                            <button class="calBtn9 text-center" onclick="Bopen()">(</button>
+                        </th>
+                        <th>
+                            <button class="calBtn9 text-center" onclick="Bclose()">)</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAsinh text-center" value="acosh" onclick="Asinh()">asinh</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAcosh text-center" value="acosh" onclick="Acosh()">acosh</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAtanh text-center" value="atanh" onclick="Atanh()">atanh</button>
+                        </th>
+                    </tr>
+
+                </table>
+
+
+                <table class="ml-2 mt-2">
+
+                    <tr>
+                        <th>
+                            <button class="calBtn text-center" value="7" onclick="Num(value)">7</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="8" onclick="Num(value)">8</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="9" onclick="Num(value)">9</button>
+                        </th>
+                        <th>
+                            <button class="calBtn1 text-center" onclick="DEL()">DEL</button>
+                        </th>
+                        <th>
+                            <button class="calBtn2 text-center" onclick="AC()">AC</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="calBtn text-center" value="4" onclick="Num(value)">4</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="5" onclick="Num(value)">5</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="6" onclick="Num(value)">6</button>
+                        </th>
+                        <th>
+                            <button class="calBtnStar text-center" value="*" onclick="Operator(value)">*</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="/" onclick="Operator(value)">/</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="calBtn text-center" value="1" onclick="Num(value)">1</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="2" onclick="Num(value)">2</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="3" onclick="Num(value)">3</button>
+                        </th>
+                        <th>
+                            <button class="calBtnP text-center" value="+" onclick="Operator(value)">+</button>
+                        </th>
+                        <th>
+                            <button class="calBtn text-center" value="-" onclick="Operator(value)">-</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="calBtn text-center" value="0" onclick="Operator(value)">0</button>
+                        </th>
+                        <th>
+                            <button class="calBtnDot1 text-center" value="." onclick="Dot(value)">.</button>
+                        </th>
+                        <th>
+                            <button class="calBtnRnd text-center" value="Rnd" onclick="Rnd()">rnd</button>
+                        </th>
+                        <th>
+                            <button class="calBtnAns text-center" value="Ans" onclick="Answer()">Ans</button>
+                        </th>
+                        <th>
+                            <button class="calBtnEq text-center" onclick="EqualTo()">=</button>
+                        </th>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <!-- js -->
+    <script src="js/cal.js"></script>
+
+</body>
+
+</html>
